@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import triangle from "../images/playBtn.png";
+import React from 'react';
+import { motion } from 'framer-motion';
+import triangle from '../images/playBtn.png';
 
 const RadioStations = ({
   Ambient,

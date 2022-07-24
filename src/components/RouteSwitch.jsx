@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "../App";
-import Hero from './IntroScreen'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import App from '../App';
+import Hero from './introScreen'
 
 const Router = () => {
   return (

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import ReactPlayer from "react-player";
-import mute from "../images/mute.png";
-import volumeOn from "../images/volumeOn.png";
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import ReactPlayer from 'react-player';
+import mute from '../images/mute.png';
+import volumeOn from '../images/volumeOn.png';
 
 let lastPlayedVolume = 0;
 
@@ -16,22 +16,22 @@ const AudioControls = ({
 }) => {
   const handleMute = (e) => {
     let classNameVol = e.target.className;
-    if (classNameVol === "volumeOn" || classNameVol === "audioOnImg") {
+    if (classNameVol === 'volumeOn' || classNameVol === 'audioOnImg') {
       setVolumeImg(mute);
-      setUnmute("volumeOff");
-      setUnmute2("audioOffImg");
+      setUnmute('volumeOff');
+      setUnmute2('audioOffImg');
       lastPlayedVolume = volume;
       setVolume(0);
-    } else if (classNameVol === "volumeOff" || classNameVol === "audioOffImg") {
+    } else if (classNameVol === 'volumeOff' || classNameVol === 'audioOffImg') {
       setVolumeImg(volumeOn);
-      setUnmute("volumeOn");
-      setUnmute2("audioOnImg");
+      setUnmute('volumeOn');
+      setUnmute2('audioOnImg');
       setVolume(lastPlayedVolume);
     }
   };
 
-  const [muteCheck, setUnmute] = useState("volumeOn"); //unmute/mute change
-  const [muteCheck2, setUnmute2] = useState("audioOnImg");
+  const [muteCheck, setUnmute] = useState('volumeOn'); //unmute/mute change
+  const [muteCheck2, setUnmute2] = useState('audioOnImg');
   const [volumeImg, setVolumeImg] = useState(volumeOn);
   const [volume, setVolume] = useState(0.35);
 

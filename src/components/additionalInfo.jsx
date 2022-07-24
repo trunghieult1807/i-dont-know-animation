@@ -1,13 +1,13 @@
-import React from "react";
-import rain from "../images/rain.png";
-import { useEffect, useState } from "react";
-import RainASMR from "../Sounds/rain.mp3";
-import OceanASMR from "../Sounds/Ocean.mp3";
-import whiteNoiseASMR from "../Sounds/whiteNoise.mp3";
-import waves from "../images/waves.png";
-import youtube from "../images/youtube.png";
-import WhiteNoise from "../images/whiteNoise.png";
-import { motion } from "framer-motion";
+import React from 'react';
+import rain from '../images/rain.png';
+import { useEffect, useState } from 'react';
+import RainASMR from '../sounds/rain.mp3';
+import OceanASMR from '../sounds/ocean.mp3';
+import whiteNoiseASMR from '../sounds/whiteNoise.mp3';
+import waves from '../images/waves.png';
+import youtube from '../images/youtube.png';
+import WhiteNoise from '../images/whiteNoise.png';
+import { motion } from 'framer-motion';
 
 const Rain = new Audio(RainASMR);
 const Ocean = new Audio(OceanASMR);
@@ -55,9 +55,9 @@ const AdditionSettings = (props) => {
         >
           {props.radio}
           <div className="socialsContainer">
-            <a target="_blank" href={props.youtube}>
-              {" "}
-              <img src={youtube} className="socialIcons" alt="" />{" "}
+            <a target="_blank" href={props.youtube} rel="noreferrer">
+              {' '}
+              <img src={youtube} className="socialIcons" alt="" />{' '}
             </a>
           </div>
         </motion.div>
